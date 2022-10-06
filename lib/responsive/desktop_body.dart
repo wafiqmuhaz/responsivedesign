@@ -35,11 +35,12 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                   Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: 20,
-                      vertical: 110,
+                      vertical: 10,
                     ),
                     child: Container(
                       width: MediaQuery.of(context).size.width * 0.5,
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
@@ -419,199 +420,398 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                       ),
                     ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Column(
                     children: [
-                      Column(
-                        children: [
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/antara_kaltim.png",
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                        ),
+                        child: Row(
+                          children: [
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/antara_kaltim.png",
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/antaranews.png",
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/antaranews.png",
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/bangsa_online.png",
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/bangsa_online.png",
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/borneoUpdate.png",
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                      Column(
-                        // crossAxisAlignment: CrossAxisAlignment.center,
-                        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/borneoUpdate.png",
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/faktanews.png",
-                                ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/indikrag.png",
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
+                      SizedBox(
+                        height: 25,
                       ),
-                      Column(
-                        children: [
-                          // crossAxisAlignment: CrossAxisAlignment.center,
-                          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/indonews.png",
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                        ),
+                        child: Row(
+                          children: [
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/faktanews.png",
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/jatim.png",
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/indikrag.png",
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/kaltim_kita.png",
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/indonews.png",
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/jatim.png",
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                      Column(
-                        children: [
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/kbri_tokyo.png",
+                      SizedBox(
+                        height: 25,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                        ),
+                        child: Row(
+                          children: [
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/kaltim_kita.png",
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/kumparan.png",
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/kbri_tokyo.png",
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Container(
-                            height: 200,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              // color: Colors.black,
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/media/tribun_kaltim.png",
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/kumparan.png",
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                            Flexible(
+                              child: Container(
+                                height: 150,
+                                decoration: BoxDecoration(
+                                  // color: Colors.black,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      "assets/images/media/tribun_kaltim.png",
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 25,
                       ),
                     ],
                   ),
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  //   children: [
+                  //     Column(
+                  //       children: [
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/antara_kaltim.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //         SizedBox(
+                  //           height: 20,
+                  //         ),
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/antaranews.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //         SizedBox(
+                  //           height: 20,
+                  //         ),
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/bangsa_online.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //     Column(
+                  //       // crossAxisAlignment: CrossAxisAlignment.center,
+                  //       // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  //       children: [
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/borneoUpdate.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //         SizedBox(
+                  //           height: 20,
+                  //         ),
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/faktanews.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //         SizedBox(
+                  //           height: 20,
+                  //         ),
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/indikrag.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //     Column(
+                  //       children: [
+                  //         // crossAxisAlignment: CrossAxisAlignment.center,
+                  //         // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/indonews.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //         SizedBox(
+                  //           height: 20,
+                  //         ),
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/jatim.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //         SizedBox(
+                  //           height: 20,
+                  //         ),
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/kaltim_kita.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //     Column(
+                  //       children: [
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/kbri_tokyo.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //         SizedBox(
+                  //           height: 20,
+                  //         ),
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/kumparan.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //         SizedBox(
+                  //           height: 20,
+                  //         ),
+                  //         Container(
+                  //           height: 200,
+                  //           width: 250,
+                  //           decoration: BoxDecoration(
+                  //             // color: Colors.black,
+                  //             image: DecorationImage(
+                  //               image: AssetImage(
+                  //                 "assets/images/media/tribun_kaltim.png",
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //   ],
+                  // ),
                 ],
               ),
             ),
@@ -868,7 +1068,7 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
 
 // ====================================================
 
-      //     Padding(
+      // body: Padding(
       //   padding: const EdgeInsets.all(8.0),
       //   child: Row(
       //     children: [
@@ -880,7 +1080,7 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
       //             Padding(
       //               padding: const EdgeInsets.all(8.0),
       //               child: AspectRatio(
-      //                 aspectRatio: 16 / 9,
+      //                 aspectRatio: 16 / 8,
       //                 child: Container(
       //                   color: Colors.deepPurple[400],
       //                 ),
