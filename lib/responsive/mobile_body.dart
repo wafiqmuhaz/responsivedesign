@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -21,7 +21,7 @@ class MyMobileBody extends StatelessWidget {
             padding: EdgeInsets.only(
               top: 20,
             ),
-            height: 666,
+            height: 642,
             color: HexColor("#202020"),
             child: Column(
               children: [
@@ -70,8 +70,8 @@ class MyMobileBody extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      height: 35,
-                      width: 130,
+                      height: 60,
+                      width: MediaQuery.of(context).size.width * 0.4,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(5),
@@ -87,8 +87,8 @@ class MyMobileBody extends StatelessWidget {
                       width: 20,
                     ),
                     Container(
-                      height: 35,
-                      width: 130,
+                      height: 60,
+                      width: MediaQuery.of(context).size.width * 0.4,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(5),
@@ -106,7 +106,7 @@ class MyMobileBody extends StatelessWidget {
                   height: 50,
                 ),
                 Container(
-                  height: 450,
+                  height: 400,
                   width: MediaQuery.of(context).size.width * 0.5,
                   decoration: BoxDecoration(
                     color: HexColor("#202020"),
@@ -486,8 +486,7 @@ class MyMobileBody extends StatelessWidget {
                   ],
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
                       height: 100,
@@ -561,6 +560,7 @@ class MyMobileBody extends StatelessWidget {
                     height: 25,
                   ),
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Flexible(
                         flex: 1,

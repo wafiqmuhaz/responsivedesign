@@ -84,7 +84,7 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                             children: [
                               Container(
                                 height: 80,
-                                width: 220,
+                                width: 250,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(12),
@@ -101,7 +101,7 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                               ),
                               Container(
                                 height: 80,
-                                width: 220,
+                                width: 250,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(15),
