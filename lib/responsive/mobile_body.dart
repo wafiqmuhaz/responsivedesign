@@ -25,99 +25,202 @@ class MyMobileBody extends StatelessWidget {
             color: HexColor("#202020"),
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Hararu",
-                      style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      "(ハラル)",
-                      style: TextStyle(
-                        fontSize: 30,
-                        color: HexColor(
-                          "#fbb216",
+                Flexible(
+                  flex: 3,
+                  child: Container(
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Hararu",
+                              style: TextStyle(
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text(
+                              "(ハラル)",
+                              style: TextStyle(
+                                fontSize: 30,
+                                color: HexColor(
+                                  "#fbb216",
+                                ),
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
                         ),
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  "Hararu is an F&B marketplace that integrates supply chain,\nHalal Food, and personalized nutrition",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textAlign: TextAlign.center,
-                  maxLines: 3,
-                ),
-                SizedBox(
-                  height: 30,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      height: 60,
-                      width: MediaQuery.of(context).size.width * 0.4,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(5),
-                        image: DecorationImage(
-                          image: AssetImage(
-                            "assets/imagesv2/google-play-vectors.png",
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "Hararu is an F&B marketplace that integrates supply chain,\nHalal Food, and personalized nutrition",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
                           ),
-                          fit: BoxFit.fill,
+                          textAlign: TextAlign.center,
+                          maxLines: 3,
                         ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Container(
-                      height: 60,
-                      width: MediaQuery.of(context).size.width * 0.4,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(5),
-                        image: DecorationImage(
-                          image: AssetImage(
-                            "assets/imagesv2/appstore-play-vector.png",
-                          ),
-                          fit: BoxFit.fill,
+                        SizedBox(
+                          height: 30,
                         ),
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 50,
-                ),
-                Container(
-                  height: 400,
-                  width: MediaQuery.of(context).size.width * 0.5,
-                  decoration: BoxDecoration(
-                    color: HexColor("#202020"),
-                    image: DecorationImage(
-                      fit: BoxFit.fill,
-                      image: AssetImage(
-                        "assets/images/landing/home/device.png",
-                      ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              height: 60,
+                              width: MediaQuery.of(context).size.width * 0.4,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                    "assets/imagesv2/google-play-vectors.png",
+                                  ),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Container(
+                              height: 60,
+                              width: MediaQuery.of(context).size.width * 0.4,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(
+                                  10,
+                                ),
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                    "assets/imagesv2/appstore-play-vector.png",
+                                  ),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                 ),
+                Flexible(
+                  flex: 6,
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    decoration: BoxDecoration(
+                      color: HexColor("#202020"),
+                      image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage(
+                          "assets/images/landing/home/device.png",
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.center,
+                //   children: [
+                //     Text(
+                //       "Hararu",
+                //       style: TextStyle(
+                //           fontSize: 30,
+                //           fontWeight: FontWeight.w500,
+                //           color: Colors.white),
+                //     ),
+                //     SizedBox(
+                //       width: 10,
+                //     ),
+                //     Text(
+                //       "(ハラル)",
+                //       style: TextStyle(
+                //         fontSize: 30,
+                //         color: HexColor(
+                //           "#fbb216",
+                //         ),
+                //         fontWeight: FontWeight.w500,
+                //       ),
+                //     ),
+                //   ],
+                // ),
+                // SizedBox(
+                //   height: 10,
+                // ),
+                // Text(
+                //   "Hararu is an F&B marketplace that integrates supply chain,\nHalal Food, and personalized nutrition",
+                //   style: TextStyle(
+                //     color: Colors.white,
+                //     fontSize: 12,
+                //     fontWeight: FontWeight.bold,
+                //   ),
+                //   textAlign: TextAlign.center,
+                //   maxLines: 3,
+                // ),
+                // SizedBox(
+                //   height: 30,
+                // ),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.center,
+                //   children: [
+                //     Container(
+                //       height: 60,
+                //       width: MediaQuery.of(context).size.width * 0.4,
+                //       decoration: BoxDecoration(
+                //         color: Colors.white,
+                //         borderRadius: BorderRadius.circular(5),
+                //         image: DecorationImage(
+                //           image: AssetImage(
+                //             "assets/imagesv2/google-play-vectors.png",
+                //           ),
+                //           fit: BoxFit.fill,
+                //         ),
+                //       ),
+                //     ),
+                //     SizedBox(
+                //       width: 20,
+                //     ),
+                //     Container(
+                //       height: 60,
+                //       width: MediaQuery.of(context).size.width * 0.4,
+                //       decoration: BoxDecoration(
+                //         color: Colors.white,
+                //         borderRadius: BorderRadius.circular(5),
+                //         image: DecorationImage(
+                //           image: AssetImage(
+                //             "assets/imagesv2/appstore-play-vector.png",
+                //           ),
+                //           fit: BoxFit.fill,
+                //         ),
+                //       ),
+                //     ),
+                //   ],
+                // ),
+                // SizedBox(
+                //   height: 50,
+                // ),
+                // Container(
+                //   height: 400,
+                //   width: MediaQuery.of(context).size.width * 0.5,
+                //   decoration: BoxDecoration(
+                //     color: HexColor("#202020"),
+                //     image: DecorationImage(
+                //       fit: BoxFit.fill,
+                //       image: AssetImage(
+                //         "assets/images/landing/home/device.png",
+                //       ),
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           ),

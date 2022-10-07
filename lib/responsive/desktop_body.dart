@@ -26,109 +26,117 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
             flex: 1,
             child: Container(
               height: 680,
-              // width: MediaQuery.of(context).size.width * 0.5,
               decoration: BoxDecoration(
                 color: HexColor("#202020"),
               ),
               child: Row(
                 children: [
-                  Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 20,
-                      vertical: 10,
-                    ),
-                    child: Container(
-                      width: MediaQuery.of(context).size.width * 0.5,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              Text(
-                                "Hararu",
-                                style: TextStyle(
-                                    fontSize: 60,
-                                    fontWeight: FontWeight.w500,
-                                    color: Colors.white),
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Text(
-                                "(ハラル)",
-                                style: TextStyle(
-                                  fontSize: 60,
-                                  color: HexColor(
-                                    "#fbb216",
-                                  ),
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            "Hararu is an F&B marketplace that integrates supply chain,\nHalal Food, and personalized nutrition",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 25,
-                          ),
-                          Row(
+                  Flexible(
+                    flex: 3,
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 20,
+                        vertical: 10,
+                      ),
+                      child: Container(
+                        child: Container(
+                          // width: MediaQuery.of(context).size.width * 0.5,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                height: 80,
-                                width: 250,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(12),
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                      "assets/imagesv2/appstore-play-vector.png",
-                                    ),
-                                    fit: BoxFit.fill,
+                                child: FittedBox(
+                                  child: Row(
+                                    children: [
+                                      Text(
+                                        "Hararu",
+                                        style: TextStyle(
+                                            fontSize: 60,
+                                            fontWeight: FontWeight.w500,
+                                            color: Colors.white),
+                                      ),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        "(ハラル)",
+                                        style: TextStyle(
+                                          fontSize: 60,
+                                          color: HexColor(
+                                            "#fbb216",
+                                          ),
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
                               SizedBox(
-                                width: 20,
+                                height: 15,
                               ),
-                              Container(
-                                height: 80,
-                                width: 250,
-                                decoration: BoxDecoration(
+                              Text(
+                                "Hararu is an F&B marketplace that integrates supply chain,\nHalal Food, and personalized nutrition",
+                                style: TextStyle(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(15),
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                      "assets/imagesv2/google-play-vectors.png",
-                                    ),
-                                    fit: BoxFit.fill,
-                                  ),
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
                                 ),
+                              ),
+                              SizedBox(
+                                height: 25,
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 80,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(12),
+                                      image: DecorationImage(
+                                        image: AssetImage(
+                                          "assets/imagesv2/appstore-play-vector.png",
+                                        ),
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                  Container(
+                                    height: 80,
+                                    width: 250,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(15),
+                                      image: DecorationImage(
+                                        image: AssetImage(
+                                          "assets/imagesv2/google-play-vectors.png",
+                                        ),
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ],
                           ),
-                        ],
+                        ),
                       ),
                     ),
                   ),
                   Flexible(
-                    flex: 1,
+                    flex: 2,
                     child: Padding(
                       padding: EdgeInsets.only(
                         right: 40,
                         top: 40,
+                        left: 40,
                       ),
                       child: Container(
-                        width: MediaQuery.of(context).size.width * 0.3,
                         decoration: BoxDecoration(
                           // color: Colors.amber,
                           color: HexColor("#202020"),
@@ -142,6 +150,121 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                       ),
                     ),
                   ),
+                  // Padding(
+                  //   padding: EdgeInsets.symmetric(
+                  //     horizontal: 20,
+                  //     vertical: 10,
+                  //   ),
+                  // child: Container(
+                  //   width: MediaQuery.of(context).size.width * 0.5,
+                  //   child: Column(
+                  //     mainAxisAlignment: MainAxisAlignment.center,
+                  //     crossAxisAlignment: CrossAxisAlignment.start,
+                  //     children: [
+                  //       Container(
+                  //         child: FittedBox(
+                  //           child: Row(
+                  //             children: [
+                  //               Text(
+                  //                 "Hararu",
+                  //                 style: TextStyle(
+                  //                     fontSize: 60,
+                  //                     fontWeight: FontWeight.w500,
+                  //                     color: Colors.white),
+                  //               ),
+                  //               SizedBox(
+                  //                 width: 10,
+                  //               ),
+                  //               Text(
+                  //                 "(ハラル)",
+                  //                 style: TextStyle(
+                  //                   fontSize: 60,
+                  //                   color: HexColor(
+                  //                     "#fbb216",
+                  //                   ),
+                  //                   fontWeight: FontWeight.w500,
+                  //                 ),
+                  //               ),
+                  //             ],
+                  //           ),
+                  //         ),
+                  //       ),
+                  //       SizedBox(
+                  //         height: 15,
+                  //       ),
+                  //       Text(
+                  //         "Hararu is an F&B marketplace that integrates supply chain,\nHalal Food, and personalized nutrition",
+                  //         style: TextStyle(
+                  //           color: Colors.white,
+                  //           fontSize: 20,
+                  //           fontWeight: FontWeight.bold,
+                  //         ),
+                  //       ),
+                  //       SizedBox(
+                  //         height: 25,
+                  //       ),
+                  //       Row(
+                  //         children: [
+                  //           Container(
+                  //             height: 80,
+                  //             width: 250,
+                  //             decoration: BoxDecoration(
+                  //               color: Colors.white,
+                  //               borderRadius: BorderRadius.circular(12),
+                  //               image: DecorationImage(
+                  //                 image: AssetImage(
+                  //                   "assets/imagesv2/appstore-play-vector.png",
+                  //                 ),
+                  //                 fit: BoxFit.fill,
+                  //               ),
+                  //             ),
+                  //           ),
+                  //           SizedBox(
+                  //             width: 20,
+                  //           ),
+                  //           Container(
+                  //             height: 80,
+                  //             width: 250,
+                  //             decoration: BoxDecoration(
+                  //               color: Colors.white,
+                  //               borderRadius: BorderRadius.circular(15),
+                  //               image: DecorationImage(
+                  //                 image: AssetImage(
+                  //                   "assets/imagesv2/google-play-vectors.png",
+                  //                 ),
+                  //                 fit: BoxFit.fill,
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ],
+                  //   ),
+                  //   ),
+                  // ),
+                  // Flexible(
+                  //   // flex: 1,
+                  //   child: Padding(
+                  //     padding: EdgeInsets.only(
+                  //       // right: 40,
+                  //       top: 40,
+                  //       left: 40,
+                  //     ),
+                  //     child: Container(
+                  //       width: MediaQuery.of(context).size.width * 0.3,
+                  //       decoration: BoxDecoration(
+                  //         // color: Colors.amber,
+                  //         color: HexColor("#202020"),
+                  //         image: DecorationImage(
+                  //           fit: BoxFit.fill,
+                  //           image: AssetImage(
+                  //             "assets/images/landing/home/device.png",
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
                 ],
               ),
             ),
@@ -381,20 +504,13 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                     ),
                   ),
                 ),
-                Flexible(
-                  flex: 1,
-                  child: Container(
-                    height: 600,
-                    // decoration: BoxDecoration(
-                    //   color: Colors.white,
-                    // ),
-                    width: MediaQuery.of(context).size.width * 0.5,
-                    // height: ,
-                    color: Colors.white,
-                    child: SvgPicture.asset(
-                      "assets/images/landing/info-image.svg",
-                      fit: BoxFit.fill,
-                    ),
+                Container(
+                  height: 900,
+                  width: MediaQuery.of(context).size.width * 0.5,
+                  color: Colors.white,
+                  child: SvgPicture.asset(
+                    "assets/images/landing/info-image.svg",
+                    fit: BoxFit.fill,
                   ),
                 ),
               ],
@@ -619,199 +735,6 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                       ),
                     ],
                   ),
-                  // Row(
-                  //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  //   children: [
-                  //     Column(
-                  //       children: [
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/antara_kaltim.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //         SizedBox(
-                  //           height: 20,
-                  //         ),
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/antaranews.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //         SizedBox(
-                  //           height: 20,
-                  //         ),
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/bangsa_online.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //       ],
-                  //     ),
-                  //     Column(
-                  //       // crossAxisAlignment: CrossAxisAlignment.center,
-                  //       // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  //       children: [
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/borneoUpdate.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //         SizedBox(
-                  //           height: 20,
-                  //         ),
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/faktanews.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //         SizedBox(
-                  //           height: 20,
-                  //         ),
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/indikrag.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //       ],
-                  //     ),
-                  //     Column(
-                  //       children: [
-                  //         // crossAxisAlignment: CrossAxisAlignment.center,
-                  //         // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/indonews.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //         SizedBox(
-                  //           height: 20,
-                  //         ),
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/jatim.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //         SizedBox(
-                  //           height: 20,
-                  //         ),
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/kaltim_kita.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //       ],
-                  //     ),
-                  //     Column(
-                  //       children: [
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/kbri_tokyo.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //         SizedBox(
-                  //           height: 20,
-                  //         ),
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/kumparan.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //         SizedBox(
-                  //           height: 20,
-                  //         ),
-                  //         Container(
-                  //           height: 200,
-                  //           width: 250,
-                  //           decoration: BoxDecoration(
-                  //             // color: Colors.black,
-                  //             image: DecorationImage(
-                  //               image: AssetImage(
-                  //                 "assets/images/media/tribun_kaltim.png",
-                  //               ),
-                  //             ),
-                  //           ),
-                  //         ),
-                  //       ],
-                  //     ),
-                  //   ],
-                  // ),
                 ],
               ),
             ),
@@ -831,233 +754,472 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                 ),
                 child: Row(
                   children: [
-                    Container(
-                      // color: Colors.white,
-                      width: 300,
-                      child: Column(
-                        // mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Xetia",
-                            style: TextStyle(
-                              fontSize: 50,
-                              color: HexColor(
-                                "#fbb216",
-                              ),
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            "Companies that have a strong hold in the field of Artificial Intelligence, are able to carry out various analyzes by utilizing the most updated technology to perform all digital activities instantly.",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                            ),
-                            maxLines: 7,
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 40,
-                    ),
-                    Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "About Us",
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: HexColor(
-                                "#fbb216",
-                              ),
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 50,
-                          ),
-                          Text(
-                            "Company Profile",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Text(
-                            "Teams",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Text(
-                            "Contacs",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 40,
-                    ),
-                    Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Products",
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: HexColor(
-                                "#fbb216",
-                              ),
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 50,
-                          ),
-                          Text(
-                            "Hararu",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 30,
-                          ),
-                          Text(
-                            "Dowload\nHararu",
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: HexColor(
-                                "#fbb216",
-                              ),
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 30,
-                          ),
-                          Container(
-                            height: 30,
-                            width: 100,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(5),
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/imagesv2/google-play-vectors.png",
+                    Flexible(
+                      flex: 2,
+                      child: Container(
+                        child: Column(
+                          // mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Xetia",
+                              style: TextStyle(
+                                fontSize: 50,
+                                color: HexColor(
+                                  "#fbb216",
                                 ),
-                                fit: BoxFit.fill,
+                                fontWeight: FontWeight.w500,
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Container(
-                            height: 30,
-                            width: 100,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(5),
-                              image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/imagesv2/appstore-play-vector.png",
-                                ),
-                                fit: BoxFit.fill,
-                              ),
+                            SizedBox(
+                              height: 15,
                             ),
-                          ),
-                        ],
+                            Text(
+                              "Companies that have a strong hold in the field of Artificial Intelligence, are able to carry out various analyzes by utilizing the most updated technology to perform all digital activities instantly.",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                              ),
+                              maxLines: 7,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(
-                      width: 40,
+                      width: 30,
                     ),
-                    Container(
-                      width: 350,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Contacs",
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: HexColor(
-                                "#fbb216",
+                    Flexible(
+                      flex: 1,
+                      child: Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "About Us",
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: HexColor(
+                                  "#fbb216",
+                                ),
+                                fontWeight: FontWeight.w500,
                               ),
-                              fontWeight: FontWeight.w500,
                             ),
-                          ),
-                          SizedBox(
-                            height: 50,
-                          ),
-                          Text(
-                            "Balikpapan , PT Indo Xetia Internasional, Perumahan Rengganis Blok 10d No.5, Gunung Bahagia South Balikpapan, Balikpapan, 76114, East Kalimantan - Indonesia",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontWeight: FontWeight.w500,
+                            SizedBox(
+                              height: 50,
                             ),
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Text(
-                            "Japan, Fujigaoka 1 - 107 Suriai 1-C, Kasugai city, Aichi Prefecture, Japan",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 15,
-                              fontWeight: FontWeight.w500,
+                            Text(
+                              "Company Profile",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
-                          ),
-                          // Row(
-                          //   children: [
-                          //     Container(
-                          //       height: 50,
-                          //       width: 50,
-                          //       decoration: BoxDecoration(
-                          //           // color: Colors.white,
-                          //           // borderRadius: BorderRadius.circular(5),
-                          //           // image: DecorationImage(
-                          //           //   image: AssetImage(
-                          //           //     "assets/imagesv2/appstore-play-vector.png",
-                          //           //   ),
-                          //           //   fit: BoxFit.fill,
-                          //           // ),
-                          //           ),
-                          //       child: SvgPicture.asset(
-                          //         "assets/images/SNS/facebook.svg",
-                          //       ),
-                          //     ),
-                          //   ],
-                          // ),
-                        ],
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              "Teams",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              "Contacs",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Flexible(
+                      flex: 1,
+                      child: Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Products",
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: HexColor(
+                                  "#fbb216",
+                                ),
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 50,
+                            ),
+                            Text(
+                              "Hararu",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Text(
+                              "Dowload\nHararu",
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: HexColor(
+                                  "#fbb216",
+                                ),
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Container(
+                              height: 30,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(5),
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                    "assets/imagesv2/google-play-vectors.png",
+                                  ),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Container(
+                              height: 30,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(5),
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                    "assets/imagesv2/appstore-play-vector.png",
+                                  ),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Flexible(
+                      flex: 1,
+                      child: Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Contacs",
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: HexColor(
+                                  "#fbb216",
+                                ),
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 50,
+                            ),
+                            Text(
+                              "Balikpapan , PT Indo Xetia Internasional, Perumahan Rengganis Blok 10d No.5, Gunung Bahagia South Balikpapan, Balikpapan, 76114, East Kalimantan - Indonesia",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              "Japan, Fujigaoka 1 - 107 Suriai 1-C, Kasugai city, Aichi Prefecture, Japan",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            // Row(
+                            //   children: [
+                            //     Container(
+                            //       height: 50,
+                            //       width: 50,
+                            //       decoration: BoxDecoration(
+                            //           // color: Colors.white,
+                            //           // borderRadius: BorderRadius.circular(5),
+                            //           // image: DecorationImage(
+                            //           //   image: AssetImage(
+                            //           //     "assets/imagesv2/appstore-play-vector.png",
+                            //           //   ),
+                            //           //   fit: BoxFit.fill,
+                            //           // ),
+                            //           ),
+                            //       child: SvgPicture.asset(
+                            //         "assets/images/SNS/facebook.svg",
+                            //       ),
+                            //     ),
+                            //   ],
+                            // ),
+                          ],
+                        ),
+                      ),
+                    ),
+
+                    //================
+
+                    //   Container(
+                    //     // color: Colors.white,
+                    //     width: 300,
+                    //     child: Column(
+                    //       // mainAxisAlignment: MainAxisAlignment.start,
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       children: [
+                    //         Text(
+                    //           "Xetia",
+                    //           style: TextStyle(
+                    //             fontSize: 50,
+                    //             color: HexColor(
+                    //               "#fbb216",
+                    //             ),
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //         SizedBox(
+                    //           height: 15,
+                    //         ),
+                    //         Text(
+                    //           "Companies that have a strong hold in the field of Artificial Intelligence, are able to carry out various analyzes by utilizing the most updated technology to perform all digital activities instantly.",
+                    //           style: TextStyle(
+                    //             color: Colors.white,
+                    //             fontSize: 18,
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //           maxLines: 7,
+                    //         ),
+                    //       ],
+                    //     ),
+                    //   ),
+                    //   SizedBox(
+                    //     width: 40,
+                    //   ),
+                    //   Container(
+                    //     child: Column(
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       children: [
+                    //         Text(
+                    //           "About Us",
+                    //           style: TextStyle(
+                    //             fontSize: 20,
+                    //             color: HexColor(
+                    //               "#fbb216",
+                    //             ),
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //         SizedBox(
+                    //           height: 50,
+                    //         ),
+                    //         Text(
+                    //           "Company Profile",
+                    //           style: TextStyle(
+                    //             color: Colors.white,
+                    //             fontSize: 20,
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //         SizedBox(
+                    //           height: 20,
+                    //         ),
+                    //         Text(
+                    //           "Teams",
+                    //           style: TextStyle(
+                    //             color: Colors.white,
+                    //             fontSize: 20,
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //         SizedBox(
+                    //           height: 20,
+                    //         ),
+                    //         Text(
+                    //           "Contacs",
+                    //           style: TextStyle(
+                    //             color: Colors.white,
+                    //             fontSize: 20,
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //       ],
+                    //     ),
+                    //   ),
+                    //   SizedBox(
+                    //     width: 40,
+                    //   ),
+                    //   Container(
+                    //     child: Column(
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       children: [
+                    //         Text(
+                    //           "Products",
+                    //           style: TextStyle(
+                    //             fontSize: 20,
+                    //             color: HexColor(
+                    //               "#fbb216",
+                    //             ),
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //         SizedBox(
+                    //           height: 50,
+                    //         ),
+                    //         Text(
+                    //           "Hararu",
+                    //           style: TextStyle(
+                    //             color: Colors.white,
+                    //             fontSize: 20,
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //         SizedBox(
+                    //           height: 30,
+                    //         ),
+                    //         Text(
+                    //           "Dowload\nHararu",
+                    //           style: TextStyle(
+                    //             fontSize: 20,
+                    //             color: HexColor(
+                    //               "#fbb216",
+                    //             ),
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //         SizedBox(
+                    //           height: 30,
+                    //         ),
+                    //         Container(
+                    //           height: 30,
+                    //           width: 100,
+                    //           decoration: BoxDecoration(
+                    //             color: Colors.white,
+                    //             borderRadius: BorderRadius.circular(5),
+                    //             image: DecorationImage(
+                    //               image: AssetImage(
+                    //                 "assets/imagesv2/google-play-vectors.png",
+                    //               ),
+                    //               fit: BoxFit.fill,
+                    //             ),
+                    //           ),
+                    //         ),
+                    //         SizedBox(
+                    //           height: 15,
+                    //         ),
+                    //         Container(
+                    //           height: 30,
+                    //           width: 100,
+                    //           decoration: BoxDecoration(
+                    //             color: Colors.white,
+                    //             borderRadius: BorderRadius.circular(5),
+                    //             image: DecorationImage(
+                    //               image: AssetImage(
+                    //                 "assets/imagesv2/appstore-play-vector.png",
+                    //               ),
+                    //               fit: BoxFit.fill,
+                    //             ),
+                    //           ),
+                    //         ),
+                    //       ],
+                    //     ),
+                    //   ),
+                    //   SizedBox(
+                    //     width: 40,
+                    //   ),
+                    //   Container(
+                    //     width: 350,
+                    //     child: Column(
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       children: [
+                    //         Text(
+                    //           "Contacs",
+                    //           style: TextStyle(
+                    //             fontSize: 20,
+                    //             color: HexColor(
+                    //               "#fbb216",
+                    //             ),
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //         SizedBox(
+                    //           height: 50,
+                    //         ),
+                    //         Text(
+                    //           "Balikpapan , PT Indo Xetia Internasional, Perumahan Rengganis Blok 10d No.5, Gunung Bahagia South Balikpapan, Balikpapan, 76114, East Kalimantan - Indonesia",
+                    //           style: TextStyle(
+                    //             color: Colors.white,
+                    //             fontSize: 15,
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //         SizedBox(
+                    //           height: 20,
+                    //         ),
+                    //         Text(
+                    //           "Japan, Fujigaoka 1 - 107 Suriai 1-C, Kasugai city, Aichi Prefecture, Japan",
+                    //           style: TextStyle(
+                    //             color: Colors.white,
+                    //             fontSize: 15,
+                    //             fontWeight: FontWeight.w500,
+                    //           ),
+                    //         ),
+                    //         // Row(
+                    //         //   children: [
+                    //         //     Container(
+                    //         //       height: 50,
+                    //         //       width: 50,
+                    //         //       decoration: BoxDecoration(
+                    //         //           // color: Colors.white,
+                    //         //           // borderRadius: BorderRadius.circular(5),
+                    //         //           // image: DecorationImage(
+                    //         //           //   image: AssetImage(
+                    //         //           //     "assets/imagesv2/appstore-play-vector.png",
+                    //         //           //   ),
+                    //         //           //   fit: BoxFit.fill,
+                    //         //           // ),
+                    //         //           ),
+                    //         //       child: SvgPicture.asset(
+                    //         //         "assets/images/SNS/facebook.svg",
+                    //         //       ),
+                    //         //     ),
+                    //         //   ],
+                    //         // ),
+                    //       ],
+                    //     ),
+                    //   ),
                   ],
                 ),
               ),
